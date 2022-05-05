@@ -80,11 +80,21 @@
     
 }
 
+.btn-principal:hover {
+    color: var(--very-light-red);
+    background-color: var(--white);
+}
+
 .btn-secundary {
     padding: 15px 40px;
     background-color: var(--white);
     color: var(--light-red);
     border-radius: 30px;
+}
+
+.btn-secundary:hover {
+    background-color: var(--bg-secondary-btn);
+    color: var(--white);
 }
 
 .info-header {
