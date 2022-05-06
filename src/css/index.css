@@ -184,8 +184,113 @@
 
 /*Page two*/
 
+.page-two {
+    color: var(--white);
+    background-image: linear-gradient(to right, #2E2F41,#3D4063);
+    border-radius: 0 100px;
+}
+
+.bg-circle {
+    background-image: url("../../assets/background/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position-x: -3%;
+    background-position-y: 80%;
+    background-size: 55%;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-two .container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.page-two .left  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.page-two .left img {
+    width: 50%;
+    max-width: 460px;
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.page-two .right  {
+    width: 50%;
+}
+
+.page-two h2 {
+    font-size: 40px;
+    margin: 100px 0 24px 0;
+}
+
+.page-two p {
+    margin-bottom: 100px;
+    line-height: 150%;
+}
+
+
 
 /*Page three*/
+
+.page-three {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-image: url("../../assets/others/illustration-laptop-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -25%;
+    background-position-y: 48%;
+    background-size: 60%;
+}
+
+.page-three * {
+    color: var(--very-dark-black-blue);
+}
+
+.page-three .container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-three .container-info {
+    width: 100%;
+    max-width: 510px;
+    margin-top: 300px;
+}
+
+.page-three .container-info h3 {
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.page-three .container-info p {
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.page-three .container-info .top {
+    margin-bottom: 72px;
+}
+
+.page-three .container-info .bottom {
+    margin-bottom: 300px;
+}
 
 
 /*Footer*/
@@ -194,6 +299,7 @@ footer {
     background-color: var(--very-dark-black-blue);
     border-radius: 0 100px 0 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 32px;
@@ -228,4 +334,8 @@ footer * {
 
 .container-footer a:hover {
     text-decoration: underline;
+}
+
+.attribution {
+    margin: 50px;
 }
