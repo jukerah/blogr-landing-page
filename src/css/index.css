@@ -138,7 +138,7 @@
     background-image: url("../../assets/others/illustration-editor-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-position-x: 120%;
+    background-position-x: 125%;
     background-position-y: 55%;
     background-size: 55%;
 }
@@ -160,7 +160,7 @@
 
 .page-one .container-info {
     width: 100%;
-    max-width: 510px;
+    max-width: 550px;
     margin-top: 96px;
 }
 
@@ -252,7 +252,7 @@
     background-image: url("../../assets/others/illustration-laptop-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-position-x: -25%;
+    background-position-x: -30%;
     background-position-y: 48%;
     background-size: 60%;
 }
@@ -270,7 +270,7 @@
 
 .page-three .container-info {
     width: 100%;
-    max-width: 510px;
+    max-width: 550px;
     margin-top: 300px;
 }
 
