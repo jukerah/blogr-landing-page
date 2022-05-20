@@ -385,4 +385,27 @@ footer * {
         text-align: center;
         padding: 15px 0;
     }
+    .page-one {
+        padding: 0 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        background-image: url("../../assets/others/illustration-editor-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 125%;
+        background-position-y: 0%;
+        background-size: 100%;
+    }
+    .page-one h2 {
+        font-size: 28px;
+        margin-top: 100px 0 24px 0;
+    }
+    .container-info {
+        flex-direction: column;
+    }
+    .container-info .top {
+        order: 2;
+    }
 }
