@@ -373,19 +373,36 @@ footer * {
     .bg-circle {
         background-image: url("../../assets/background/bg-pattern-circles.svg");
         background-repeat: no-repeat;
-        background-position-x: -3%;
-        background-position-y: 80%;
-        background-size: 55%;
+        background-position: center;
+        background-position-y: -200px;
+        background-size: cover;
         padding: 0 32px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .page-two .container {
-        width: 100%;
-        max-width: 1100px;
+        width: 100%;        
         display: flex;
         flex-direction: column;
+    }
+    .page-two .left  {
+        width: 100%;
+    }
+    .page-two .left img {
+        width: 350px;
+        margin-top: -40px;
+    }
+    .page-two .right  {
+        width: 100%;
+    }
+    .page-two h2 {
+        font-size: 36px;
+        margin: 160px 0 24px 0;
+        text-align: center;
+    }
+    .page-two p {
+        text-align: center;
     }
 
 }
