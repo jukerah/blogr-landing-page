@@ -37,99 +37,18 @@
     text-decoration: none;
     margin-right: 60px;
 }
-.navbar-mobile {
-    background-color: var(--white);
-    width: calc(100% - 96px);
-    display: flex;
+.menu-mobile {
+    display: none;
     align-items: center;
-    flex-direction: column;
-    left: 0;
-    position: absolute;
-    padding: 32px 24px;
-    margin: 72px 0 0 24px;
 }
-.navbar-mobile * {
-    color: var(--very-dark-black-blue);
-}
-.navbar-mobile ul {
-    width: 100%;
-}
-.navbar-mobile hr {
-    margin: 16px 0;
-    border: 1px solid rgb(244, 244, 244);
-    background-color: rgb(244, 244, 244);
-}
-.navbar-mobile ul li {
+#navbar {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    list-style-type: none;
-    align-items: center;
-    margin-bottom: 16px;
 }
-.navbar-mobile ul li .sub-menu {
-    width: calc(100% - 32px);
-    background-color: rgb(244, 244, 244);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 24px;
-    margin-top: 16px;
-    gap: 16px;
-    border-radius: 5px;
-}
-.navbar-mobile ul li .sub-menu a {
-    font-size: 16px;
-    color: rgb(113, 113, 113);
-}
-.navbar-mobile ul li img {
-    width: 10px;
-    height: 8px;
-    margin-left: 4px;
-}
-.navbar-mobile ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-.navbar-mobile ul li a:hover {
-    text-decoration: underline;
-}
-.navbar-mobile hr {
-    width: 100%;
-}
-#menu-product, #menu-company, #menu-connect {
+#box-right-mobile {
     display: none;
 }
 .rotate-icon {
     transform: rotate(180deg);
-}
-
-.navbar ul {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-}
-.navbar ul li {
-    list-style-type: none;
-}
-.navbar ul li a {
-    text-decoration: none;
-    margin-right: 4px;
-}
-.navbar ul li a:hover {
-    text-decoration: underline;
-}
-.header .box-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-}
-.header .box-right a {
-    text-decoration: none;
-    font-weight: 600;
 }
 .btn-principal {
     padding: 15px 40px;
@@ -150,11 +69,13 @@
     background-color: var(--bg-secondary-btn);
     color: var(--white);
 }
-.menu-mobile {
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
+
+
+
+
 .info-header {
     display: flex;
     flex-direction: column;
@@ -163,6 +84,7 @@
 }
 .info-header h1 {
     font-size: 60px;
+    text-align: center;
 }
 .info-header p {
     margin-top: 16px;
@@ -365,7 +287,57 @@ footer * {
     display: flex;
     margin: 50px;
 }
-
+@media (min-width: 769px) {
+    .navbar * {
+        transition: 0.5s;
+    }
+    .navbar ul li .sub-menu {
+        display: none;
+        width: 150px;
+        margin-left: -30px;
+        background-color: rgb(244, 244, 244);
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 16px;
+        margin-top: 16px;
+        border-radius: 5px;
+    }
+    .navbar ul li .sub-menu a {
+        color: var(--very-dark-black-blue);
+        padding: 8px;
+    }
+    .navbar ul li .sub-menu a:hover {
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .navbar ul li {
+        list-style-type: none;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        margin-right: 4px;
+    }
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+    .header .box-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+    .header .box-right a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
 @media (max-width: 768px) {
     /*Header*/
 
@@ -390,15 +362,8 @@ footer * {
     .navbar {
         display: none;
     }
-    .header .box-right {
-        display: none;
-    }
-    .menu-mobile {
-        display: flex;
-    }
     .info-header h1 {
         font-size: 32px;
-        text-align: center;
     }
     .box-button {
         width: 100%;
@@ -408,6 +373,112 @@ footer * {
         text-align: center;
         padding: 15px 0;
     }
+    .menu-mobile {
+        display: flex;
+    }
+
+
+    /*new mobile menu*/
+
+    .navbar {
+        background-color: var(--white);
+        width: calc(100% - 96px);
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        padding: 0 24px 32px 24px;
+        margin: 72px 0 0 24px;
+        border-radius: 5px;
+    }
+    .navbar * {
+        color: var(--very-dark-black-blue);
+        transition: 0.5s;
+    }
+    .navbar ul {
+        width: 100%;
+    }
+    .navbar hr {
+        margin: 16px 0;
+        border: 1px solid rgb(244, 244, 244);
+        background-color: rgb(244, 244, 244);
+    }
+    .navbar ul li {
+        list-style-type: none;
+        margin-top: 20px;
+    }
+    .navbar ul li div {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+    }
+    .navbar ul li .sub-menu {
+        width: calc(100% - 32px);
+        background-color: rgb(244, 244, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 16px;
+        border-radius: 5px;
+    }
+    .navbar ul li .sub-menu a {
+        font-size: 16px;
+        color: rgb(113, 113, 113);
+        padding: 10px;
+    }
+    .navbar-mobile ul li img {
+        width: 10px;
+        height: 8px;
+        margin-left: 4px;
+    }
+    .navbar ul li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 18px;
+        gap: 8px;
+        font-weight: bold;
+        padding: 8px;
+    }
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+    .navbar hr {
+        width: 100%;
+    }
+    #menu-product, #menu-company, #menu-connect {
+        display: none;
+    }
+    nav .btn-principal {
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px 40px;
+        border-radius: 30px;    
+    }
+    nav .btn-secundary {
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px 40px;
+        background-image: linear-gradient(to right, #FF876C,#F24656);
+        color: var(--white);
+        border-radius: 30px;
+    }
+    #box-right-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #box-right {
+        display: none;
+    }
+    #icon-company {
+        background-image: url(../../assets/icon/icon-arrow-dark.svg);
+    }
+    
 
     /*Page one*/
 
