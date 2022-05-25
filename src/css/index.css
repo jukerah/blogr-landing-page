@@ -379,7 +379,9 @@ footer * {
 
 
     /*new mobile menu*/
-
+    #navbar {
+        display: none;
+    }
     .navbar {
         background-color: var(--white);
         width: calc(100% - 96px);

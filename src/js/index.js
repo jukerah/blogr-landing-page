@@ -1,10 +1,8 @@
+const iconProduct = document.getElementById('icon-product');
 const iconCompany = document.getElementById('icon-company');
-const menuConnect = document.getElementById('menu-connect');
 const iconConnect = document.getElementById('icon-connect');
 
 const handleClickMenuMobile = () => {
-    iconCompany.src('../../assets/icon/icon-arrow-dark.svg');
-
     const menuMobile = document.getElementById('navbar');
     const buttonRightMenu = document.getElementById('box-right');
     const iconMenuMobile = document.getElementById('menu-mobile');
@@ -12,16 +10,22 @@ const handleClickMenuMobile = () => {
         menuMobile.style.display = 'none';
         buttonRightMenu.display = 'flex';
         iconMenuMobile.src = 'assets/icon/icon-hamburger.svg';
+        iconProduct.src = '../../assets/icon/icon-arrow-light.svg';
+        iconCompany.src = '../../assets/icon/icon-arrow-light.svg';
+        iconConnect.src = '../../assets/icon/icon-arrow-light.svg';
     } else {
         menuMobile.style.display = 'flex';
         buttonRightMenu.display = 'none';
         iconMenuMobile.src = 'assets/icon/icon-close.svg';
+        iconProduct.src = '../../assets/icon/icon-arrow-dark.svg';
+        iconCompany.src = '../../assets/icon/icon-arrow-dark.svg';
+        iconConnect.src = '../../assets/icon/icon-arrow-dark.svg';
     }
 }
 
 const dropMenu = (opt) => {
+    const menuConnect = document.getElementById('menu-connect');
     const menuProduct = document.getElementById('menu-product');
-    const iconProduct = document.getElementById('icon-product');
     const menuCompany = document.getElementById('menu-company');
 
     switch (opt) {
