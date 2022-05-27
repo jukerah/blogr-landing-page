@@ -71,6 +71,7 @@ Sumário
 <a href="https://marioelvio.com">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81795443?v=4" width="100px;" alt=""/>
  <br />
+ <a href="#" align="left">Frontend Mentor</a>
  <sub><b>Mario Elvio</b></sub></a> <a href="https://marioelvio.com" title="Mario Elvio"></a>
 
 
